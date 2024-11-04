@@ -39,7 +39,7 @@
                   </td>
                 </tr>";
                 $no++;
-              } ?>
+              }?>
             </tbody>
           </table>
         </div>

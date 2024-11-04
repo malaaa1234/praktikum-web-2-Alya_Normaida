@@ -1,4 +1,4 @@
-<?php defined('BASEPATH') or exit('No direct script access allowed');
+<?php defined('BASEPATH') OR exit('No direct script access allowed');
 class Kategori_model extends CI_Model
 {
   protected $_table = 'kategori';
@@ -12,8 +12,7 @@ class Kategori_model extends CI_Model
   public function save()
   {
     $data = array(
-      'name' => htmlspecialchars($this->input->post('name'), true)
-    );
+      'name' => htmlspecialchars($this->input->post('name'), true));
     $this->db->insert($this->_table, $data);
   }
 
@@ -34,6 +33,6 @@ class Kategori_model extends CI_Model
     $this->db->where($this->primary, $id)->delete($this->_table);
     if ($this->db->affected_rows() > 0) {
       $this->session->set_flashdata('success', 'Data berhasil dihapus');
-    }
   }
+}
 }

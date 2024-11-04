@@ -1,7 +1,6 @@
 <?php
-defined('BASEPATH') or exit('No direct script access allowed');
-class Kategori extends CI_Controller
-{
+defined('BASEPATH') OR exit('No direct script access allowed');
+class Kategori extends CI_Controller{
     public function __construct()
     {
         parent::__construct();
@@ -62,3 +61,4 @@ class Kategori extends CI_Controller
         redirect('kategori');
     }
 }
+

@@ -13,7 +13,7 @@
             <input class="form-control" type="hidden" name="id" value="<?= $kategori->id; ?>" required />
             <input class="form-control" <?php echo form_error('Name') ? 'is-invalid' : '' ?>"
               type="text" name="name" value="<?= $kategori->name; ?>" placeholder="Name" required />
-            <label for="username">Name <code>*</code></label>
+              <label for="username">Name <code>*</code></label>
             <div class="invalid-feedback">
               <?php echo form_error('name') ?>
             </div>

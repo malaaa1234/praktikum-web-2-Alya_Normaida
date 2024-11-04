@@ -9,8 +9,8 @@
       <div class="card-body">
         <form action="<?php echo site_url('kategori/save') ?>" method="post">
           <div class="form-floating mb-3">
-            <input class="form-control <?php echo form_error('Name') ? 'is-invalid' : '' ?>"
-              type="text" name="name" placeholder="Name" required />
+            <input class="form-control <?php echo form_error('Name') ? 'is-invalid':'' ?>" 
+            type="text" name="name" placeholder="Name" required />
             <label for="username">Name <code>*</code></label>
             <div class="invalid-feedback">
               <?php echo form_error('name') ?>
@@ -22,3 +22,4 @@
     </div>
   </div>
 </main>
+
